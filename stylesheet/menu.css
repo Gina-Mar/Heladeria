@@ -1,0 +1,144 @@
+@import url(pizza.css);
+@font-face {
+    font-family: Createland;
+    src: url('./Fonts/Createland');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    padding: 30px 60px;
+    flex-wrap: wrap;
+    width: 1366px;
+    height: 307px;
+    background-color: rgba(178, 236, 201, 1);
+    background-image: url(../Imagenes/fondo/Fondo\ menu.png);
+}
+.menu-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 35px;
+    padding: 0;
+}
+
+.first-row  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.second-row{
+    display: flex;
+    column-gap: 7px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo {
+    width: 265px;
+}
+
+.menu-btn {
+    padding: 20px 48px;
+    background: rgba(131, 116, 224, 1);
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+
+
+.responsive-menu {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+}
+
+.dropdown-menu {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.dropdown-btn, .submenu-btn {
+    width: 150px;
+    height: 53px;
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submenu {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+}
+
+@media screen and (max-width: 576px) {
+    .inicio {
+        background-image: url(../Imagenes/fondo/fondo\ menu\ responsive.png);
+        background-size: cover;
+        padding: 30px 20px;
+        width: 575px;
+        height: 200px;
+        color: white;
+    }
+    .logo{
+        width: 112px;
+    }
+    .responsive-menu {
+        background-image: url(../Imagenes/fondo/fondo\ menu\ responsive.png);
+        background-size: cover;
+        padding: 30px 20px;
+        width: 575px;
+        height: 200px;
+        color: white;
+    }
+    
+    .dropdown-menu {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+    }
+    
+    .dropdown-btn, .submenu-btn {
+        width: 150px;
+        height: 53px;
+        background: rgba(255, 255, 255, 0.3);
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    .submenu {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .menu-container {
+        display: none;
+    }
+
+    .responsive-menu {
+        display: flex;
+    }
+}

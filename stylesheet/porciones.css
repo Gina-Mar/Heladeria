@@ -1,0 +1,33 @@
+@import url(porciones.css);
+@font-face {
+    font-family: Createland;
+    src: url('./Fonts/Createland');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.fondo{
+    display: flex;
+    flex-wrap: wrap;
+    /* column-gap: 20px; */
+    width: 1366px;
+    height: 500px;
+    
+
+}
+
+.title{
+    color: rgba(131, 116, 224, 1);
+    font-family: Createland;
+    font-size: 48px;
+    
+}
+.card-texto{
+    font-size: 18px;
+}
+.btn{
+    background-color: rgba(131, 116, 224, 1);
+    color: white;
+}

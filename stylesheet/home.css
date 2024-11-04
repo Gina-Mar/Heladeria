@@ -1,0 +1,123 @@
+@import url(home.css);
+@font-face {
+    font-family: Createland;
+    src: url('./Fonts/Createland');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    background-color: rgba(178, 236, 201, 1);
+    height: 1000px;
+}
+.fondo{
+    position: relative;
+}
+.card-imagen{
+    text-align: center;
+}
+.card-body{
+    width: 360px;
+    height: 340px;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    background-color: rgb(179, 160, 245);
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 18px;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    text-align: justify;
+}
+.title{
+    color: rgba(131, 116, 224, 1);
+    font-family: Createland;
+    font-size: 48px;
+    
+}
+.card-texto{
+    font-size: 18px;
+}
+.por{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+.btn{
+    background-color: rgba(131, 116, 224, 1);
+    color: white;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1366px;
+    height: 350px;
+    background-color: rgba(178, 236, 201, 1);
+    background-image: url(../Imagenes/fondo/Fondo\ footer.png);
+    background-repeat: no-repeat;
+}
+.redes{
+    column-gap: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1366px;
+    height: 144px;
+    color: rgba(197, 240, 244, 1);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    
+}
+.facebook> .whatsapp{
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    color: rgba(197, 240, 244, 1);
+}
+
+@media screen and (max-width:575px) {
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 575px;
+        height: 150px;
+        background-color: rgba(178, 236, 201, 1);
+        background-image: url(../Imagenes/fondo/Fondo\ footer.png);
+        background-repeat: no-repeat;
+    }
+    .redes{
+        column-gap: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 575px;
+        height: 60px;
+        margin-top: 60px;
+        margin-left: 20px;
+        color: rgba(197, 240, 244, 1);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 30px;
+    }
+    .logof{
+        width: 150px;
+        height: 60px;
+    }
+    .facebook> .whatsapp{
+        /* column-gap: 20px; */
+        /* display: flex; */
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 28px;
+        color: rgba(197, 240, 244, 1);
+    }
+    .text{
+        display: none;
+    }
+}
+
